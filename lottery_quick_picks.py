@@ -1,6 +1,7 @@
 import random
 
 def main():
+    global num_picks
     valid_number = False
     while not valid_number:
         try:
@@ -9,7 +10,7 @@ def main():
         except ValueError:
             print("Enter valid number")
 
-    for picks in num_picks:
-        pick_gen = [picks.randrange(1, 46) for picks in range(0, 6)]
-        print(pick_gen)
+    for num in range(num_picks):
+        picks = [random.randint(0, 45) for num in range(6)]
+        print(picks)
 main()
