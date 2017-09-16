@@ -12,5 +12,6 @@ def main():
 
     for num in range(num_picks):
         picks = [random.randint(0, 45) for num in range(6)]
-        print(picks)
+        print("{:>2d} {:>2d} {:>2d} {:>2d} {:>2d} {:>2d}".format(picks[0], picks[1], picks[2], picks[3], picks[4], picks[5]))
+
 main()
